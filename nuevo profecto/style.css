@@ -1,0 +1,119 @@
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background: #000000;
+color: #fffefe;
+text-align: center;
+}
+
+header {
+background: #001d3f;
+color: white;
+padding: 20px 10px;
+}
+
+h1 {
+margin: 0;
+}
+
+.galeria {
+padding: 20px;
+}
+
+.imagenes {
+display: flex;
+justify-content: center;
+gap: 15px;
+flex-wrap: wrap;
+}
+
+.imagenes img {
+width: 200px;
+height: auto;
+border-radius: 10px;
+box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+transition: transform 0.3s;
+}
+
+.imagenes img:hover {
+transform: scale(1.1);
+}
+
+button {
+margin: 20px;
+padding: 10px 20px;
+background: #19319b;
+border: none;
+color: white;
+font-size: 16px;
+border-radius: 5px;
+cursor: pointer;
+position: relative;
+overflow: hidden;
+transition: background 0.3s ease, box-shadow 0.3s ease;
+box-shadow: 0 0 10px #3b67f7, 0 0 20px #3b67f7, 0 0 40px #3b67f7;
+animation: brillo 2s infinite alternate;
+}
+
+@keyframes brillo {
+from {
+    box-shadow: 0 0 5px #3b67f7, 0 0 10px #3b67f7, 0 0 20px #3b67f7;
+}
+to {
+    box-shadow: 0 0 20px #0066ff, 0 0 40px #0066ff, 0 0 60px #0066ff;
+}
+}
+
+button:hover {
+  background: #000158; /* Verde más oscuro */
+}
+
+/* 🎨 Nuevo estilo fijo después de hacer clic */
+button.clicado {
+background: #ff4081; /* Rosa */
+box-shadow: 0 0 20px #ff4081, 0 0 40px #ff80ab, 0 0 60px #ffbfd6;
+animation: none; /* Opcional: detener el brillo si quieres */
+}
+
+
+button:hover {
+background: #8f0000;
+}
+
+footer {
+background: #222;
+color: #bbb;
+padding: 15px;
+margin-top: 20px;
+}
+
+header h1 {
+  font-size: 3em;
+  color: #fff;
+  text-shadow: 0 0 90px #00f,
+               0 0 70px #00f,
+               0 0 90px #00f,
+               0 0 100px #00f;
+  animation: neonBlue 0.1s ease-in-out infinite alternate;
+}
+
+@keyframes neonBlue {
+  from {
+    text-shadow: 0 0 10px #00f,
+                 0 0 20px #00f,
+                 0 0 30px #00f,
+                 0 0 50px #00f;
+  }
+  to {
+    text-shadow: 0 0 20px #00f,
+                 0 0 30px #00f,
+                 0 0 60px #00f,
+                 0 0 90px #00f;
+  }
+}
+
+
+
+
+
