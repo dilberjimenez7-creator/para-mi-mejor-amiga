@@ -1,0 +1,8 @@
+CREATE DATABASE diario_web;
+USE diario_web;
+
+CREATE TABLE entradas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    contenido TEXT NOT NULL,
+    fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
